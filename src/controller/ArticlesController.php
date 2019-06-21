@@ -3,13 +3,18 @@
 class ArticlesController
 {
 
-    public function ajout()
+    public function add()
     {
-        view('articles.ajout');
+        view('articles.add');
     }
 
     public function save()
     {
-        dump($_POST);
+        redirectTo('article');
+    }
+
+    public function show()
+    {
+        echo "affichage de l'article";
     }
 }

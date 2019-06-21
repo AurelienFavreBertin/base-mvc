@@ -8,8 +8,8 @@ $router->get('/about', 'PagesController@about');
 $router->get('/contact', 'PagesController@contact');
 $router->post('/form', 'PagesController@traitementForm');
 
-$router->get('/ajout-article', 'ArticlesController@ajout');
-$router->post( '/ajout-article', 'ArticlesController@save');
+$router->get('add-article', 'ArticlesController@add');
+$router->post( 'add-article', 'ArticlesController@save');
 
 
 // Run it!
